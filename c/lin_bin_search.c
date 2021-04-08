@@ -52,7 +52,7 @@ int binary_search(int *ordered_array, size_t sz, int search_value, int *steps){
     int start = 0;
     int end = sz-1;
 
-    while (start < end){
+    while (start <= end){
         *steps += 1;
 
         int midpoint = (start + end) / 2;

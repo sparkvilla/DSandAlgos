@@ -43,13 +43,13 @@ def binary_search(ordered_array, search_value):
     >>> binary_search(range(0, 1000, 2) , 62)
     (31, 8)
     >>> binary_search(range(0, 1000, 2) , 761)
-    (-1, 8)
+    (-1, 9)
     """
     checks = 0
     start=0
     end=len(ordered_array) - 1
 
-    while start < end:
+    while start <= end:
         checks += 1
         val_idx = (start + end) // 2
         val_midpoint = ordered_array[val_idx]
